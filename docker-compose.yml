@@ -1,0 +1,15 @@
+version: '3'
+services:
+   web-container:
+     build: ./web
+     container_name: web-container
+     ports:
+       - "80:80"
+     volumes:
+       - ./_data/html:/var/www/html
+   mysql-containe:
+     build: ./mysql
+     container_name: mysql-container
+     restart: on-failure
+     volumes:
+       - ./_data/mysql_home:/var/lib/mysql
