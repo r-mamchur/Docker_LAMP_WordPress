@@ -10,5 +10,5 @@ Before useing ***docker-compose***, run ***data_dir.sh*** for make data director
 - Next runs - they won't be change.
  
  ### Note
- ***PID***s ***httpd*** and ***mysqld*** in containers are not **`1`** but I hope all be good.
+ ***PID***s of ***httpd*** and ***mysqld*** in containers are not **`1`** but I hope all be good.
  
